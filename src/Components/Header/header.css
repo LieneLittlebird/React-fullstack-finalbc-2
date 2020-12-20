@@ -1,0 +1,16 @@
+#navbar {
+    background-color: #505b62;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 0px;
+    height: 2.2em;
+    margin-top: 0px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}

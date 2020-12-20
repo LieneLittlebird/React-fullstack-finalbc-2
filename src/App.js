@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import Home from "./Components/Pages/Home";
 import News from "./Components/Pages/News";
 import Discussion from "./Components/Pages/Discussion";
 import Register from "./Components/Pages/Register";
 import About from "./Components/Pages/About";
+import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
 const App = () => {
     return (
@@ -28,6 +30,7 @@ const App = () => {
                         <About />
                     </Route>
                 </Switch>
+                <Footer />
             </Router>
         </div>
     );
