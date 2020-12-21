@@ -1,7 +1,6 @@
 #navbar {
   background-color: #505b62;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   padding-top: 0px;
@@ -12,10 +11,21 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  margin: 5px;
+  margin: 5px 20px 5px 5px;
 }
 
 #navbar-img {
   max-width: 50px;
   max-height: 30px;
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+#header-logo {
+  margin-right: 18px;
 }

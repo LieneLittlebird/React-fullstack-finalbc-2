@@ -19,3 +19,11 @@
 4. Export header component
 5. Import it on App
 6. Add header to the return part on App
+
+## Home
+
+###Carousel (1component):
+
+1. Find out how to create carousel without bootstrap
+2. Get dummy images
+3. Add functionality and styling

@@ -8,14 +8,17 @@ const Header = () => (
     <ul id="navbar">
       <li>
         <NavLink className="nav-link" to="/" exact>
-          <img id="navbar-img" src={venustransp} alt="dogmeme" />
+          <div id="header-logo">
+            <img id="navbar-img" src={venustransp} alt="dogmeme" />
+            <span>Dune 2021</span>
+          </div>
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink className="nav-link" to="/" exact>
           Home
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink className="nav-link" to="/news">
           News

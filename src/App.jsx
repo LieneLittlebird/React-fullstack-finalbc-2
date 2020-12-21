@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Components/Header/Header";
-import Home from "./Components/Pages/Home";
-import News from "./Components/Pages/News";
-import Discussion from "./Components/Pages/Discussion";
-import Register from "./Components/Pages/Register";
-import About from "./Components/Pages/About";
+import Home from "./Components/Home/Home";
+import News from "./Components/News/News";
+import Discussion from "./Components/Discussion/Discussion";
+import Register from "./Components/Register/Register";
+import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
