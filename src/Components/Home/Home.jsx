@@ -1,13 +1,11 @@
 import React from "react";
 import "./home.css";
 import ImageSlider from "./Slider/ImageSlider";
-
-// import Carousel from "./carousel";
+import SliderData from "./Slider/SliderData";
 
 const Home = () => (
   <div>
-    <ImageSlider />
-    <p>Home page. Carousel. Article cards.</p>
+    <ImageSlider slides={SliderData} />
   </div>
 );
 
