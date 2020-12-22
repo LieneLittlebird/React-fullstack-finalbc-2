@@ -24,6 +24,11 @@
 
 ###Carousel (1component):
 
-1. Find out how to create carousel without bootstrap
+1. Find out how to create a carousel without bootstrap
 2. Get dummy images
-3. Add functionality and styling
+3. Add functionality and styling:
+   1. A component with the images
+      1.1. React icons || font awesome
+   2. A component with the functionality
+      2.1. A funcion for prev
+      2.2. A function for next
