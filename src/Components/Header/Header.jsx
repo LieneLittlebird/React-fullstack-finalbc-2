@@ -14,11 +14,6 @@ const Header = () => (
           </div>
         </NavLink>
       </li>
-      {/* <li>
-        <NavLink className="nav-link" to="/" exact>
-          Home
-        </NavLink>
-      </li> */}
       <li>
         <NavLink className="nav-link" to="/news">
           News

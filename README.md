@@ -22,7 +22,7 @@
 
 ## Home
 
-###Carousel (1component):
+###Carousel/Slider (1component):
 
 1. Find out how to create a carousel without bootstrap
 2. Get dummy images
@@ -32,3 +32,11 @@
    2. A component with the functionality
       2.1. A funcion for prev
       2.2. A function for next
+      2.3. UseState
+
+### Article cards
+
+1. Create a component that returns:
+   1.1. Title with a link + paragraph
+   1.2. Add a "box" to it
+   1.3. Copy 3 times (with display flex or similar)
