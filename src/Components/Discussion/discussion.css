@@ -1,0 +1,10 @@
+#chat-postarea {
+  height: 200px;
+  width: 500px;
+  border: 2px solid black;
+}
+
+.chat-data {
+  border: 2px solid black;
+  border-top: none;
+}
