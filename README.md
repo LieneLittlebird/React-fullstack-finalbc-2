@@ -58,7 +58,7 @@
 - [ ] Save the message in the back-end
 
 - [ ] How to make:
-  - [ ] Frontend -> JSON Placeholder
+  - [x] Frontend -> JSON Placeholder
   - [ ] Frontend -> express backend -> JSON placeholder
   - [ ] Frontend -> expres backend -> mongoDB
 
