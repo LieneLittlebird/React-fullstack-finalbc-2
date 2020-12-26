@@ -2,9 +2,18 @@
   height: 200px;
   width: 500px;
   border: 2px solid black;
+  overflow-y: auto;
 }
 
 .chat-data {
   border: 2px solid black;
   border-top: none;
+}
+
+#chat-window {
+  margin-left: 20px;
+}
+
+.newLine {
+  padding: 5px;
 }

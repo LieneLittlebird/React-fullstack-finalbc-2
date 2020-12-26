@@ -1,17 +1,46 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./discussion.css";
 
 const Discussion = () => {
-  const postData = {
-    // 1. Connect username and message field with button
-    // Connect button to saving the data
+  const [text, setText] = useState([]);
+  const [message, setMessage] = useState("");
+  const [username, setUsername] = useState("");
+
+  const changeUsername = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const changeMessage = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const postMessage = async (e) => {
+    e.preventDefault();
+    const currentDate = new Date().toISOString().slice(0, 10);
+    text.push(`${username} ${currentDate} ${message}`);
+
+    await axios({
+      method: "post",
+      url: "http://localhost:3004/posts",
+      data: {
+        userName: username,
+        userMessage: message,
+        createdAt: currentDate,
+      },
+    });
+    setText(JSON.parse(JSON.stringify(text)));
   };
   return (
     <div>
       <h3>Discussion</h3>
       <form>
         <div id="chat-window">
-          <div id="chat-postarea" />
+          <div id="chat-postarea">
+            {text.map((newLine) => (
+              <div className="newLine">{newLine}</div>
+            ))}
+          </div>
           <div>
             <label htmlFor="chat-username">
               <input
@@ -19,6 +48,8 @@ const Discussion = () => {
                 className="chat-data"
                 id="chat-username"
                 name="username"
+                value={username}
+                onChange={changeUsername}
               />
               <strong>Username</strong>:
             </label>
@@ -26,15 +57,17 @@ const Discussion = () => {
           <div>
             <label htmlFor="chat-message">
               <textarea
-                type="text"
+                type="submit"
                 id="chat-message"
                 className="chat-data"
                 name="message"
+                value={message}
+                onChange={changeMessage}
               />
               <strong>Message</strong>:
             </label>
           </div>
-          <button id="submit-button" type="submit" onClick={postData}>
+          <button id="submit-button" type="submit" onClick={postMessage}>
             Submit
           </button>
         </div>

@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "userName": "djentelmenis",
+      "userMessage": "lllllllllll",
+      "createdAt": "2020-12-26",
+      "id": 2
+    },
+    {
+      "userName": "Liene",
+      "userMessage": "Valsts ieņēmumu dienesta (VID) virtuālais asistents, vārdā Toms, darbojas jau gadu. VID pārstāve Kristīne Augstkalne-Jaunbērziņa pastāstīja, ka virtuālais asistents izveidots, lai klienti varētu sazināties ar iestādi 24 stundas 7 dienas nedēļā. Toms spēj atbildēt uz 18 000 dažādu jautājumu, darbdienās ar viņu sazinās ap 400, brīvdienās – ap 100 klienti",
+      "createdAt": "2020-12-26",
+      "id": 3
+    }
+  ]
+}

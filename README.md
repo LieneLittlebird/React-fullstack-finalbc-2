@@ -50,14 +50,11 @@
 
 ## Discussion (chat)
 
-- [ ] Input fields for the username and password:
+- [x] Input fields for the username and password:
   - [x] Add field for username and password + chat window
   - [x] Add a "submit" button
-  - [ ] Variables, props or both (connection)
-  - [ ] Perhaps, use objects as arrays here
-- [ ] Create an object/array with username (title), date
-      [ ] Incorporate the message into this
-- [ ] Display the message on screen/browser - [ ] Connect ids etc.
+- [x] Incorporate the message into this
+- [x] Display the message on screen/browser - [x] Connect ids etc.
 - [ ] Save the message in the back-end
 
 - [ ] How to make:
