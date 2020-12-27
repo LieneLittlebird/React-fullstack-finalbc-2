@@ -27,7 +27,9 @@ const Discussion = () => {
 
   const postMessage = async (e) => {
     e.preventDefault();
+
     const currentDate = new Date().toISOString().slice(0, 17);
+
     posts.push({
       userName: username,
       userMessage: message,
@@ -43,6 +45,7 @@ const Discussion = () => {
         createdAt: currentDate,
       },
     });
+
     setPosts(JSON.parse(JSON.stringify(posts)));
   };
 

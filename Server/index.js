@@ -1,9 +1,9 @@
-import express from "express";
-import cors from "cors";
-import axios from "axios";
-import { JS_PLACEHOLDER_API } from "../src/constants.js";
+const express = require("express");
+const cors = require("cors");
+const { MongoClient } = require("mongodb");
 
-// import bodyParser from "body-parser";
+const MONGO_DB_PORT = 27017;
+const MONGO_DB_API = `mongodb://localhost:${MONGO_DB_PORT}`;
 
 const app = express();
 app.use(express.json());
@@ -18,26 +18,25 @@ app.post("/addPost", async (req, res) => {
     createdAt,
   };
 
-  await axios({
-    method: "post",
-    url: `${JS_PLACEHOLDER_API}/posts`,
-    headers: {
-      "content-type": "application/json",
-    },
-    data,
-  });
+  const client = await MongoClient.connect(MONGO_DB_API);
+  const db = client.db("discussion_save");
+  const postsCollection = db.collection("posts");
+  await postsCollection.insertOne(data);
+
+  client.close();
 
   res.send("Post added successfully");
 });
 
 app.get("/getPosts", async (req, res) => {
-  const response = await axios({
-    method: "get",
-    url: `${JS_PLACEHOLDER_API}/posts`,
+  const client = await MongoClient.connect(MONGO_DB_API);
+  const db = client.db("discussion_save");
+  const postsCollection = db.collection("posts");
+  postsCollection.find({}).toArray((err, docs) => {
+    client.close();
+    res.send(docs);
   });
-
-  res.send(response.data);
 });
 
-const port = process.env.PORT || 8080;
+const port = 8080;
 app.listen(port);
