@@ -2,15 +2,18 @@
   "name": "final-task-bc2",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json:server": "json-server --watch db.json --port 3004"
+    "json:server": "json-server --watch db.json --port 3004",
+    "dev": "nodemon -L Server/index.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "express": "^4.17.1",
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -27,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.6",
     "prettier": "2.2.1"
   },
   "eslintConfig": {

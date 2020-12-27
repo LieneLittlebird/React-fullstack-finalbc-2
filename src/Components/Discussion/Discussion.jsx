@@ -17,7 +17,7 @@ const Discussion = () => {
 
   const postMessage = async (e) => {
     e.preventDefault();
-    const currentDate = new Date().toISOString().slice(0, 10);
+    const currentDate = new Date().toISOString().slice(0, 14);
     text.push(`${username} ${currentDate} ${message}`);
 
     await axios({
