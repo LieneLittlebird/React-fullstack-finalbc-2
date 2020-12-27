@@ -29,6 +29,24 @@
       "userMessage": "Eiropas Savienība (ES) piedzīvo vēsturisku dienu, jo vairākās bloka dalībvalstīs sākusies ilgi gaidītā vakcinācija pret bīstamo koronavīrusu Covid-19. Vakcīna paver cerību, ka Eiropa 2021. gadā varētu atkopties no pandēmijas, kas šajā gadā visu apstādināja un radīja ciešanas miljoniem cilvēku.",
       "createdAt": "2020-12-27T11:",
       "id": 6
+    },
+    {
+      "userName": "KP",
+      "userMessage": "Es rastu jaunu msg",
+      "createdAt": "2020-12-27T16:50:",
+      "id": 7
+    },
+    {
+      "userName": "Jauns username",
+      "userMessage": "Jauns ierakts",
+      "createdAt": "2020-12-27T17:04:",
+      "id": 8
+    },
+    {
+      "userName": "jauns",
+      "userMessage": "messa",
+      "createdAt": "2020-12-27T17:11:",
+      "id": 9
     }
   ]
 }

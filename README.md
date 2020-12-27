@@ -59,7 +59,7 @@
 
 - [ ] How to make:
   - [x] Frontend -> JSON Placeholder
-  - [ ] Frontend -> express backend -> JSON placeholder
+  - [x] Frontend -> express backend -> JSON placeholder
   - [ ] Frontend -> expres backend -> mongoDB
 
 ## About
