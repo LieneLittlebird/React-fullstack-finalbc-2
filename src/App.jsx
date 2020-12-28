@@ -13,23 +13,25 @@ const App = () => (
   <div>
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/news">
-          <News />
-        </Route>
-        <Route path="/discussion">
-          <Discussion />
-        </Route>
-        <Route path="/register">
-          <Register />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
+      <div id="main">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/discussion">
+            <Discussion />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </div>
       <Footer />
     </Router>
   </div>
