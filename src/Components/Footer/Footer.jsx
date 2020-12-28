@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => (
   <div id="footer">
-    <p id="footer-p">Dune Footer here. All rights reserved &copy;</p>
+    <p id="footer-p">&copy; Dune 2021. All rights reserved </p>
   </div>
 );
 

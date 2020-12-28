@@ -1,13 +1,15 @@
 .row {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 300px;
-  margin-right: 300px;
+  padding-left: 252px;
+  padding-right: 252px;
   margin-bottom: 20%;
 }
 .article-card-home {
   padding: 18px;
-  border: 1px solid black;
+  border: 1.8px solid #785237;
+  border-radius: 4px;
+  margin: 10px;
   width: 30%;
 }
 
