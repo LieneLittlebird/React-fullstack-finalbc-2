@@ -24,8 +24,5 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-}
-
-#header-logo {
   margin-right: 18px;
 }

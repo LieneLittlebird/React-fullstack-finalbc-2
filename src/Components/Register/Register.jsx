@@ -50,52 +50,62 @@ const Register = () => (
   >
     <div>
       <h3>Become a member of the Dune club!</h3>
+
       <Form id="form-id">
-        <div>
-          <label htmlFor="firstName">First Name:</label>
-          <Field name="firstName" type="text" className="reg-field" />
-          <ErrorMessage name="firstName" />
+        <div id="from-wrapper">
+          <div>
+            <label htmlFor="firstName">First Name:</label>
+            <Field name="firstName" type="text" className="reg-field" />
+            <ErrorMessage name="firstName" />
+          </div>
+          <div>
+            <label htmlFor="lastName">Last Name:</label>
+            <Field name="lastName" type="text" className="reg-field" />
+            <ErrorMessage name="lastName" />
+          </div>
+          <div>
+            <label htmlFor="email">Email Address:</label>
+            <Field name="email" type="email" className="reg-field" />
+            <ErrorMessage name="email" />
+          </div>
+          <div>
+            <label htmlFor="password">Password:</label>
+            <Field name="password" type="password" className="reg-field" />
+            <ErrorMessage name="password" />
+          </div>
+          <div>
+            <label htmlFor="country">Country:</label>
+            <Field
+              name="country"
+              as="select"
+              type="dropdownlist"
+              className="reg-field"
+              id="country-input"
+              data={["LV", "LT", "EE", "SE"]}
+            >
+              <option value="">---</option>
+              <option value="LV">Latvia</option>
+              <option value="LT">Lithuania</option>
+              <option value="EE">Estonia</option>
+              <option value="SE">Sweden</option>
+            </Field>
+            <ErrorMessage name="country" />
+          </div>
+          <div>
+            <Field
+              name="termsOfService"
+              type="checkbox"
+              className="reg-field"
+            />
+            <label htmlFor="termsOfService" id="termsOfService">
+              Agree to Terms and Conditions
+            </label>
+            <ErrorMessage name="termsOfService" />
+          </div>
+          <button type="submit" id="reg-button">
+            Register
+          </button>
         </div>
-        <div>
-          <label htmlFor="lastName">Last Name:</label>
-          <Field name="lastName" type="text" className="reg-field" />
-          <ErrorMessage name="lastName" />
-        </div>
-        <div>
-          <label htmlFor="email">Email Address:</label>
-          <Field name="email" type="email" className="reg-field" />
-          <ErrorMessage name="email" />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <Field name="password" type="password" className="reg-field" />
-          <ErrorMessage name="password" />
-        </div>
-        <div>
-          <label htmlFor="country">Country:</label>
-          <Field
-            name="country"
-            as="select"
-            type="dropdownlist"
-            className="reg-field"
-            data={["LV", "LT", "EE", "SE"]}
-          >
-            <option value="">---</option>
-            <option value="LV">Latvia</option>
-            <option value="LT">Lithuania</option>
-            <option value="EE">Estonia</option>
-            <option value="SE">Sweden</option>
-          </Field>
-          <ErrorMessage name="country" />
-        </div>
-        <div>
-          <Field name="termsOfService" type="checkbox" className="reg-field" />
-          <label htmlFor="termsOfService">Agree to Terms and Conditions</label>
-          <ErrorMessage name="termsOfService" />
-        </div>
-        <button type="submit" id="reg-button">
-          Register
-        </button>
       </Form>
     </div>
   </Formik>
