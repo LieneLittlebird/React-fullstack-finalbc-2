@@ -1,9 +1,12 @@
 import React from "react";
 import "./news.css";
+import NewsArticle from "./NewsArticle";
 
 const News = () => (
   <div>
-    <p>News page. Wide article cards with news.</p>
+    <NewsArticle />
+    <NewsArticle />
+    <NewsArticle />
   </div>
 );
 
