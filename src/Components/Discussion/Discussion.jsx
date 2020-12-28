@@ -50,9 +50,9 @@ const Discussion = () => {
   };
 
   return (
-    <div>
-      <h3>Discussion</h3>
-      <form>
+    <div id="discussion-main">
+      <h3>Chat with other Dune fans</h3>
+      <form id="form-main">
         <div id="chat-window">
           <div id="chat-postarea">
             {posts.map((post) => (
@@ -62,8 +62,9 @@ const Discussion = () => {
               >{`${post.userName}: ${post.createdAt} ${post.userMessage}`}</div>
             ))}
           </div>
-          <div>
+          <div id="chat-input">
             <label htmlFor="chat-username">
+              <strong className="chat-strong">Username:</strong>
               <input
                 type="text"
                 className="chat-data"
@@ -72,11 +73,9 @@ const Discussion = () => {
                 value={username}
                 onChange={changeUsername}
               />
-              <strong>Username</strong>:
             </label>
-          </div>
-          <div>
             <label htmlFor="chat-message">
+              <strong className="chat-strong">Message:</strong>
               <textarea
                 type="submit"
                 id="chat-message"
@@ -85,12 +84,11 @@ const Discussion = () => {
                 value={message}
                 onChange={changeMessage}
               />
-              <strong>Message</strong>:
             </label>
+            <button id="submit-button" type="submit" onClick={postMessage}>
+              Submit
+            </button>
           </div>
-          <button id="submit-button" type="submit" onClick={postMessage}>
-            Submit
-          </button>
         </div>
       </form>
     </div>
