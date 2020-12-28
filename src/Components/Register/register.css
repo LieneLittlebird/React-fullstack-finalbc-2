@@ -1,0 +1,17 @@
+label {
+  color: #284f3b;
+  font-weight: bold;
+}
+
+.reg-field {
+  margin: 10px;
+  padding: 5px;
+}
+
+#form-id {
+  border: 2px solid black;
+}
+
+#reg-button {
+  margin: 10px;
+}

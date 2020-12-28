@@ -10,26 +10,35 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/addPost", async (req, res) => {
-  const { userName, userMessage, createdAt } = req.body;
-
-  const data = {
-    userName,
-    userMessage,
-    createdAt,
-  };
-
-  const client = await MongoClient.connect(MONGO_DB_API);
+  const client = await MongoClient.connect(MONGO_DB_API, {
+    useUnifiedTopology: true,
+  });
   const db = client.db("discussion_save");
   const postsCollection = db.collection("posts");
-  await postsCollection.insertOne(data);
+  await postsCollection.insertOne(req.body);
 
   client.close();
 
   res.send("Post added successfully");
 });
 
+app.post("/addForm", async (req, res) => {
+  const client = await MongoClient.connect(MONGO_DB_API, {
+    useUnifiedTopology: true,
+  });
+  const db = client.db("form_save");
+  const postsCollection = db.collection("forms");
+  await postsCollection.insertOne(req.body);
+
+  client.close();
+
+  res.send("Form data added successfully");
+});
+
 app.get("/getPosts", async (req, res) => {
-  const client = await MongoClient.connect(MONGO_DB_API);
+  const client = await MongoClient.connect(MONGO_DB_API, {
+    useUnifiedTopology: true,
+  });
   const db = client.db("discussion_save");
   const postsCollection = db.collection("posts");
   postsCollection.find({}).toArray((err, docs) => {

@@ -5,7 +5,7 @@
 
 #chat-postarea {
   height: 230px;
-  border: 3px solid #785237;
+  border: 1px solid #785237;
   background-color: #fbe1bb;
   border-radius: 4px;
   overflow-y: auto;
@@ -41,14 +41,14 @@
 }
 
 #form-main {
-  border: 6px solid #785237;
-  border-radius: 5px;
+  border: 2px solid #785237;
+  border-radius: 8px;
 
   width: 1100px;
 }
 
 #submit-button {
-  height: 30px;
+  height: 40px;
   width: 80px;
   background-color: #785237;
   color: white;

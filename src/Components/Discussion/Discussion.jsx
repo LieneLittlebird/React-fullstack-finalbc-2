@@ -28,25 +28,35 @@ const Discussion = () => {
   const postMessage = async (e) => {
     e.preventDefault();
 
-    const currentDate = new Date().toISOString().slice(0, 17);
+    if (username.length > 0 && message.length > 0) {
+      const currentDate = new Date().toISOString().slice(0, 16);
+      const year = currentDate.slice(0, 4);
+      const month = currentDate.slice(5, 7);
+      const date = currentDate.slice(8, 10);
+      const time = currentDate.slice(11, 16);
 
-    posts.push({
-      userName: username,
-      userMessage: message,
-      createdAt: currentDate,
-    });
+      const fullDate = `${year}.${month}.${date} ${time}`;
 
-    await axios({
-      method: "post",
-      url: `${EXPRESS_API}/addPost`,
-      data: {
+      posts.push({
         userName: username,
         userMessage: message,
-        createdAt: currentDate,
-      },
-    });
+        createdAt: fullDate,
+      });
 
-    setPosts(JSON.parse(JSON.stringify(posts)));
+      await axios({
+        method: "post",
+        url: `${EXPRESS_API}/addPost`,
+        data: {
+          userName: username,
+          userMessage: message,
+          createdAt: fullDate,
+        },
+      });
+
+      setPosts(JSON.parse(JSON.stringify(posts)));
+      setMessage("");
+      setUsername("");
+    }
   };
 
   return (
@@ -59,7 +69,7 @@ const Discussion = () => {
               <div
                 key={post.userMessage}
                 className="newLine"
-              >{`${post.userName}: ${post.createdAt} ${post.userMessage}`}</div>
+              >{`${post.createdAt}  ${post.userName}:  ${post.userMessage}`}</div>
             ))}
           </div>
           <div id="chat-input">
