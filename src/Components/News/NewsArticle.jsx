@@ -4,7 +4,7 @@ import "./newsArticle.css";
 
 const NewsArticle = () => (
   <div id="article-card-news">
-    <Link to="/" className="article-link">
+    <Link to="/single-article" className="article-link">
       <h3>Article1</h3>
     </Link>
     <p>

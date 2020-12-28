@@ -1,0 +1,28 @@
+.single-row {
+  display: flex;
+  align-items: center;
+}
+
+.single-p {
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+/* #single-img {
+  margin-top: 0px;
+} */
+
+/* #img-much {
+    display:grid
+} */
+
+#img-lots {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#img-lots img {
+  width: 200px;
+}

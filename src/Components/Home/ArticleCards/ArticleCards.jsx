@@ -7,7 +7,7 @@ const ArticleCards = () => (
   <div>
     <div className="row">
       <div className="article-card-home">
-        <Link to="/" className="article-link">
+        <Link to="/single-article" className="article-link">
           <h3>Article1</h3>
         </Link>
         <p>
@@ -22,7 +22,7 @@ const ArticleCards = () => (
         </p>
       </div>
       <div className="article-card-home">
-        <Link to="/" className="article-link">
+        <Link to="/single-article" className="article-link">
           <h3>Article2</h3>
         </Link>
         <p>
@@ -37,7 +37,7 @@ const ArticleCards = () => (
         </p>
       </div>
       <div className="article-card-home">
-        <Link to="/" className="article-link">
+        <Link to="/single-article" className="article-link">
           <h3>Article3</h3>
         </Link>
         <p>

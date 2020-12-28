@@ -8,6 +8,7 @@ import Register from "./Components/Register/Register";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
+import SingleArticle from "./Components/News/SingleArticle/SingleArticle";
 
 const App = () => (
   <div>
@@ -29,6 +30,9 @@ const App = () => (
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/single-article">
+            <SingleArticle />
           </Route>
         </Switch>
       </div>
