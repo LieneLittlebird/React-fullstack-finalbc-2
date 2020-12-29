@@ -4,9 +4,9 @@ import NewsArticle from "./NewsArticle";
 
 const News = () => (
   <div>
-    <NewsArticle />
-    <NewsArticle />
-    <NewsArticle />
+    <NewsArticle title="Article 1" />
+    <NewsArticle title="Article 2" />
+    <NewsArticle title="Article 3" />
   </div>
 );
 

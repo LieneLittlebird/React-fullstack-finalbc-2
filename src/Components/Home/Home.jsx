@@ -6,7 +6,10 @@ import SliderData from "./Slider/SliderData";
 
 const Home = () => (
   <div>
-    <ImageSlider slides={SliderData} />
+    <ImageSlider
+      slides={SliderData}
+      arrowStyle={{ color: "black", offset: 200 }}
+    />
     <ArticleCards />
   </div>
 );

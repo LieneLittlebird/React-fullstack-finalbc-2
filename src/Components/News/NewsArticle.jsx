@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./newsArticle.css";
 
-const NewsArticle = () => (
+const NewsArticle = ({ title }) => (
   <div id="article-card-news">
     <Link to="/single-article" className="article-link">
-      <h3>Article1</h3>
+      <h3>{title}</h3>
     </Link>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
