@@ -1,9 +1,9 @@
 import React from "react";
+import AboutTabs from "./Tabs/AboutTabs";
 
 const About = () => (
   <div>
-    {" "}
-    <p>About page. Some tabs with about info</p>
+    <AboutTabs />
   </div>
 );
 
