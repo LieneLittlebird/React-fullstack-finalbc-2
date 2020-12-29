@@ -54,27 +54,37 @@ const Register = () => (
       <Form id="form-id">
         <div id="from-wrapper">
           <div>
-            <label htmlFor="firstName">First Name:</label>
+            <label htmlFor="firstName" className="reg-label-parent">
+              First Name:
+            </label>
             <Field name="firstName" type="text" className="reg-field" />
             <ErrorMessage name="firstName" />
           </div>
           <div>
-            <label htmlFor="lastName">Last Name:</label>
+            <label htmlFor="lastName" className="reg-label-parent">
+              Last Name:
+            </label>
             <Field name="lastName" type="text" className="reg-field" />
             <ErrorMessage name="lastName" />
           </div>
           <div>
-            <label htmlFor="email">Email Address:</label>
+            <label htmlFor="email" className="reg-label-parent">
+              Email Address:
+            </label>
             <Field name="email" type="email" className="reg-field" />
             <ErrorMessage name="email" />
           </div>
           <div>
-            <label htmlFor="password">Password:</label>
+            <label htmlFor="password" className="reg-label-parent">
+              Password:
+            </label>
             <Field name="password" type="password" className="reg-field" />
             <ErrorMessage name="password" />
           </div>
           <div>
-            <label htmlFor="country">Country:</label>
+            <label htmlFor="country" className="reg-label-parent">
+              Country:
+            </label>
             <Field
               name="country"
               as="select"
