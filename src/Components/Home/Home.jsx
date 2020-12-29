@@ -10,6 +10,7 @@ const Home = () => (
       slides={SliderData}
       arrowStyle={{ color: "black", offset: 200 }}
     />
+    <h3 id="home-h3">3 most recent news articles</h3>
     <ArticleCards />
   </div>
 );

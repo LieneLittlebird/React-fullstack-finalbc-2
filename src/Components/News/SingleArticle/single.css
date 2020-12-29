@@ -21,6 +21,7 @@
 
 #single-article-h2 {
   margin-left: 35px;
+  color: #534438;
 }
 
 #gallery {
@@ -49,13 +50,3 @@
   color: white;
   z-index: 20;
 }
-
-/* .left-arrow {
-  left: -100px !important;
-  color: white !important;
-}
-
-.right-arrow {
-  right: -100px !important;
-  color: white !important;
-} */

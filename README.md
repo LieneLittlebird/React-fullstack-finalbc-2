@@ -44,9 +44,9 @@
 
 ## Single-page article component
 
-- [ ] Component with some text and a "lightbox"
-  - [ ] Add a column with text
-  - [ ] Add the "lightbox"
+- [x] Component with some text and a "lightbox"
+  - [x] Add a column with text
+  - [x] Add the "lightbox"
 
 ## Discussion (chat)
 
@@ -57,13 +57,13 @@
 - [x] Display the message on screen/browser - [x] Connect ids etc.
 - [ ] Save the message in the back-end
 
-- [ ] How to make:
+- [x] How to make:
   - [x] Frontend -> JSON Placeholder
   - [x] Frontend -> express backend -> JSON placeholder
-  - [ ] Frontend -> expres backend -> mongoDB
+  - [x] Frontend -> expres backend -> mongoDB
 
 ## About
 
 - [ ] Create tabs with some text and a picture
 - [ ] Create contacts area
-- [ ] Insert Google maps into this
+- [ ] Insert Google maps
