@@ -1,6 +1,6 @@
 import React from "react";
-import AboutTabs from "./Tabs/AboutTabs";
-import AboutMaps from "./AboutMaps";
+import AboutTabs from "./AboutTabs/AboutTabs";
+import AboutMaps from "./AboutMaps/AboutMaps";
 import "./about.css";
 
 const About = () => (

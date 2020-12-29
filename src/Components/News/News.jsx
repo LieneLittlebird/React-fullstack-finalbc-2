@@ -1,9 +1,10 @@
 import React from "react";
 import "./newsArticle.css";
 import NewsArticle from "./NewsArticle";
+import "./news.css";
 
 const News = () => (
-  <div>
+  <div id="news">
     <NewsArticle title="Article 1" />
     <NewsArticle title="Article 2" />
     <NewsArticle title="Article 3" />
