@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./newsArticle.css";
-import Poster from "../About/AboutTabs/Poster.jpg";
+import Poster from "./Poster.jpg";
 
 const NewsArticle = ({ title }) => (
   <div>

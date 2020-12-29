@@ -1,6 +1,6 @@
 import React from "react";
-import "./newsArticle.css";
-import NewsArticle from "./NewsArticle";
+import "./NewsArticle/newsArticle.css";
+import NewsArticle from "./NewsArticle/NewsArticle";
 import "./news.css";
 
 const News = () => (
