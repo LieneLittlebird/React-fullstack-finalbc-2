@@ -1,6 +1,6 @@
 import React from "react";
 import AboutTabs from "./Tabs/AboutTabs";
-import MapsSafe from "./MapsSafe.jpg";
+import AboutMaps from "./AboutMaps";
 import "./about.css";
 
 const About = () => (
@@ -10,7 +10,7 @@ const About = () => (
       <div id="contacts-left">
         <div className="contacts-el-left">
           <h3 className="contacts-h3">Contacts:</h3>
-          <img src={MapsSafe} alt="" id="maps-img" />
+          <AboutMaps />
         </div>
       </div>
       <div id="contacts-right">
