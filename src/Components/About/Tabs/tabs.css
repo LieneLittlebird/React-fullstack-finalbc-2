@@ -43,3 +43,35 @@
   height: 200px;
   padding: 18px 10px 20px 18px;
 }
+
+#contacts-all {
+  display: flex;
+  align-items: flex-start;
+  width: 1300px;
+}
+
+#contacts-left {
+  display: flex;
+}
+
+#contacts-right {
+  display: flex;
+}
+
+.contacts-el-right {
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.contacts-el-left {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.contacts-right-p {
+  margin-top: 0px;
+}
+
+.contacts-h3 {
+  margin-top: 20px 30px 10px 10px;
+}

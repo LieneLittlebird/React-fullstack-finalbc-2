@@ -16,3 +16,12 @@
 .article-link {
   color: #534438;
 }
+
+.home-articles-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* .news-img {
+  width: 100px;
+} */

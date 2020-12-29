@@ -1,5 +1,5 @@
 import React from "react";
-import "./news.css";
+import "./newsArticle.css";
 import NewsArticle from "./NewsArticle";
 
 const News = () => (
