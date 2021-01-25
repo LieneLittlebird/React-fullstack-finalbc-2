@@ -49,7 +49,7 @@ const Register = () => (
       <h3>Become a member of the Dune club!</h3>
 
       <Form id="form-id">
-        <div id="from-wrapper">
+        <div id="form-wrapper">
           <div>
             <label htmlFor="firstName" className="reg-label-parent">
               First Name:

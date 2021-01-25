@@ -35,6 +35,19 @@ app.post("/addForm", async (req, res) => {
   res.send("Form data added successfully");
 });
 
+// app.post("/addTest", async (req, res) => {
+//   const client = await MongoClient.connect(MONGO_DB_API, {
+//     useUnifiedTopology: true,
+//   });
+//   const db = client.db("test_save");
+//   const postsCollection = db.collection("tests");
+//   await postsCollection.insertOne(req.body);
+
+//   client.close();
+
+//   res.send("Test data added successfully");
+// });
+
 app.get("/getPosts", async (req, res) => {
   const client = await MongoClient.connect(MONGO_DB_API, {
     useUnifiedTopology: true,
