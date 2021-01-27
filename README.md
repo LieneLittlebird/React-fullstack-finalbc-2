@@ -1,4 +1,4 @@
-# Final task JS Bootcamp 2
+# React-dunetheme-finaltask-bc2
 
 ## Header
 
