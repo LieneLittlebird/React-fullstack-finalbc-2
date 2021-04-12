@@ -9,7 +9,7 @@ import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
 import SingleArticle from "./Components/News/SingleArticle/SingleArticle";
-
+ 
 const App = () => (
   <div>
     <Router>
